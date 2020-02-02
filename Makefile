@@ -44,6 +44,8 @@ VOBJECTS = $(addprefix $(OBJDIR)/, $(VSRCS_NO_PREFIX:%.c=%.o))
 
 all: $(BINDIR)/$(NAME) $(BINDIR)/$(VISU_NAME)
 
+macbook: all
+
 $(OBJDIR)/%.o : $(SRCDIR)/%.c $(INCLUDES)
 	$(CC) -c $< -o $@ $(CFLAGS) 
 
@@ -55,7 +57,7 @@ $(BINDIR)/$(NAME): $(OBJECTS)
 
 $(BINDIR)/$(VISU_NAME): $(VOBJECTS)
 	@make -C $(LIBFTDIR)
-	@$(CC) -o $@ $^ $(CFLAGS) -L $(LIBFTDIR) -lft -lmlx -framework OpenGL -framework Appkit
+	@$(CC) -o $@ $^ $(CFLAGS) -L $(LIBFTDIR) -lft -L minilibx_macos -lmlx -framework OpenGL -framework Appkit
 	@echo "$(OK_COLOR)$(VISU_NAME) linked with success !$(EOC)"
 
 clean:
