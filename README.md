@@ -20,7 +20,7 @@ The first player who can't place its piece anymore (or uses illegal coordinates)
 
 ## Bonus
 
-A program called filler_visu should be piped directly to the output of the virtual machine and provides a graphic interface to better show the progress of the game.
+A program called filler_visu should be piped directly to the output of the virtual machine and provides a graphic interface to show the progress of the game.
 
 ## Usage
 
