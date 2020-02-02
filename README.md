@@ -10,8 +10,8 @@ This project was about coding a player of filler.
 The virtual machine *filler_vm* given by the subject takes 3 parameters:
 
 * a map as a text file
-* a player #1 represented with *x*
-* a player #2 represented with *o*
+* a player executable #1 represented with **x**
+* a player executable #2 represented with **o**
 
 Each turn the virtual machine provides one piece to each players besides the current state of the map.
 The players shall place their piece in the map so that these pieces overlap with only one tile of a piece previously placed before by themselves (the map always starts with one tile already set for each players).
