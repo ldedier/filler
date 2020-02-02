@@ -7,7 +7,7 @@ This project was about coding a player of filler.
 
 ## Rules
 
-The virtual machine * filler_vm * given by the subject takes 3 parameters:
+The virtual machine *filler_vm* given by the subject takes 3 parameters:
 
 * a map as a text file
 * a player #1 represented with *x*
