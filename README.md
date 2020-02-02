@@ -5,7 +5,7 @@
 
 This project was about coding a player of filler.
 
-##Rules
+## Rules
 
 The virtual machine * filler_vm * given by the subject takes 3 parameters:
 
